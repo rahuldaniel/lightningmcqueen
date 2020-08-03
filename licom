@@ -1,0 +1,308 @@
+adduser --> Add a longterm user (best)
+useradd --> Just for temprorary -- locked state, shoud add passwd later.
+useradd -d [location] [username]--> This command creates the user home directory, in the given location
+useradd -u [UID]  -g [GID] [username] --> this command creates user with his own given User ID number and group ID.
+useradd -M [username] --> Creates user with no home directory, root will be home
+useradd -e [year-month-date] -f [x] [username] --> creates user with an expiry date and password expires in x days
+useradd -s [login shell location] [username] --> creates user with given login shell.
+[(U,G)ID] --> [(Unique,Group) Identification number] 
+z aaRdeluser --> Removes a user (best)
+setfacl -m u:(user):(permissions) (folder/file)	---> Gives permissions to a particular user on a particular filem.
+userdell --> removes a user
+--------------------------------------------------------------------------------------------------------------------------------------
+grep -f qwe xyz |sort -k1.25,1.28 |cut -b25- |sort|uniq -c -f qwe xyz -- takes the strings from qwe and finds the one line per search from qwe in xyz
+sort -k1.25,1.28 xyz  -- sorts from 25 location of first record to 28 for total xyz file
+cut -b25- xyz -- cuts the charectors from 25 location and and rest of the record till the end of first line
+uniq -c -- counts the occurance of a string after sorting
+----------------------------------------------------------------------------------------------------------------------------------------
+ps -- list of process going.
+ps -x -- list of process -- big list.
+ps -aux -- list of process by diffrent users -- big list.
+PID -- Process ID's.
+TTY - Teletype -- Controling terminal.
+TIME -- CPU time consumed.
+STAT -- State of the process -- [s-> Sleeping(waiting for keystoke)
+				 R-> Running 
+				 D-> Uninterruptible Sleep(waiting for disk)
+				 T-> Stopped
+				 Z-> Zombie process(terminated child process)
+				 < -> High priority process
+				 N-> Low priority process]
+%CPU -- CPU percentage in usage.
+%MEM -- Memory percentage in usage.
+VSZ -- Virtual memory size.
+RSS -- Resident set size(RAM process in kilobites).
+START -- Time when the process started .
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+top -- More dynamic view of system activity
+-->The top program displays a continuously updating (by default, every 3 seconds) display
+   of the system processes listed in order of process activity.
+-->The top display consists of two parts: a system summary at the top of the display, followed by a
+   table of processes sorted by CPU activity.
+	"top - 10:17:53 up  1:48,  1 user,  load average: 0.71, 0.48, 0.38
+         Tasks: 211 total,   1 running, 210 sleeping,   0 stopped,   0 zombie
+	 %Cpu(s):  9.1 us,  3.0 sy,  0.0 ni, 87.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+	 MiB Mem :   6841.6 total,   4920.9 free,    969.6 used,    951.1 buff/cache
+	 MiB Swap:   3906.0 total,   3906.0 free,      0.0 used.   5620.7 avail Mem"
+top -- Name of the program
+10:17:53 -- Current time of the day.(at that moment).
+1:48 -- Run time of the device since after booting.
+1 user -- number of users (that moment)
+load averge -- Number of process, that are waiting to run(runnable state and sharing CPU)
+		0.71 -- first value -- Average of last 5 seconds
+		top - 10:17:53 up  1:48,  1 user,  load average: 0.71, 0.48, 0.38
+Tasks: 211 total,   1 running, 210 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  9.1 us,  3.0 sy,  0.0 ni, 87.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   6841.6 total,   4920.9 free,    969.6 used,    951.1 buff/cache
+MiB Swap:   3906.0 total,   3906.0 free,      0.0 used.   5620.7 avail Mem 
+
+------------------------------------------------------------------------------------------------------
+xlogo -- opens a new window with a X logo, after typing that we can see, the new window shoud close to return to  the shell(to type)
+so, we can understand that, while running a background process by user, the shell keeps waiting with blinking mark.
+In order to keep the background running and use the shell asusal, we need to use "xlogo &"
+xlogo & --> This command keeps the bash running along with backgroung xlogo process running. This returns us a ID number "[1] 2230"
+[1] 2230 --> [1]-- Job1, 2230-- Jobs ID
+---------------------------------------------------------------------------------------------------------
+jobs --> This command shows the background processing jobs, this returns us "[1]+ Running xlogo &"
+[1]+ Running xlogo & --> [1]-- Job1, Running,xlogo &-- the running command
+--------------------------------------------------------------------------------------------------------
+ctrl+c -->Terminates the background processing job--(INT --Interupt).
+ctrl+z --> Stops a job without termminating it(TSTP -- Terminal stop).
+These upper two keyboard store commands give signals to foreground
+fg %1 --> Resumes the stoped job, %1-- Job number(not ID)
+---------------------------------------------------------------------------------------------------------
+kill -[option] PID ---> This command kills the process.
+This kills workds like a signal, diffrent options diffrent signals
+15 -- TERM --> Default(this works even with no option given,as a default)
+1 -- HUD --> Hangup the process
+2 -- INT --> INterupt the process
+3 -- QUIT --> Quit
+9 -- KILL --> KIll commmand
+11 -- SEGV -- >Segmentation Violation(illegal use of memory)
+18 -- CONT --> Continue
+19 -- STOP --> Stop 
+20 -- TSTP --> Terminate
+28 -- WINCH --> Window Change
+
+--> When we are having multiple process running and we want to kill all the process at the sametime 
+killall xlogo --> Terminates multiple xlogo process
+----------------------------------------------------------------------------------------------------------
+More commands on Process
+pstree --> Outputs a process list arranged in a tree-like pattern showing the parent/child relationships between processes.
+vmstat --> Outputs a snapshot of system resource usage including, memory, swap and disk I/O. To see a continuous display, follow the
+	   command with a time delay (in seconds) for updates. For example: vmstat 5. Terminate the output with Ctrl-c.
+xload --> A graphical program that draws a graph showing system load over time.
+tload --> Similar to the xload program, but draws the graph in the terminal. Terminate the output with Ctrl-c.
+----------------------------------------------------------------------------------------------------------
+mount --> list the mounted devices
+df -aTh --> give mounted information
+cat /proc/self/mounts --> same
+umount (device file associated location) -> Unmounts the device
+mount -t (file system type) (device file ass location) (location we want to mount) --> This command hepls us to mount the device at own wanted location
+we can only unmount the device from any directory but not from the directory which the device is mounted\
+tail -f /var/log/messages --> gives the information in derterming the name of mounted device
+		---Partition of a drive---
+fdist (mounted location) --> formats the disk and invoke fdisk program
+	use m of help
+	p - examine the exixting file layot, remember the ID
+	l- to list the total number of partitions
+	t - change the partitions system id
+	type the information needed and provided
+	w - write and save and exit
+		---create new file system on drive---
+mkfs -t (file system (linux - ext3) we want to change to) (drive mounted location)  -->  this command changes the file system of the device from whatever to ext3.
+mkfs -t vfat (drive mounted location) --> Brings the original file system back
+fsck (drive mounted location) --> checks the file systems  integrity and repairs corrupt file systems
+dd if=(drive mounted location) of=(some data) --> copies an image from one to other
+genisoimage -- who knows -- for cd-rom
+wodim -- blanks before reuse for cd-rom
+-- ---------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+					--NETWORKING COMMANDS--
+nslookup (address) --> Discovers hostname from IP / IP from host
+hostname --> Displays your machines hostname. (-d domainname ,-f fulldomainname ,-i ip address)
+netstat --> finding connections to and from hosts.  -- very imp and usefull
+	-a (displays all connections)
+	-t (displays only tcp connections)
+	-u (displays only udp connections)
+	-g (displays all multicast networks subscribed by host)
+	-l (displays the listening ports)
+	-i
+	-n
+ping (address) --> Checks the connectivity to from system to address -- (sends packets as request and gets replies as packs in time)
+ifconfig --> Displays current network configuration informations
+	wl --> This device(wireless) -- interface
+	lo --> Local host
+	RX --> Recevied
+	TX --> Transfered
+	-a (views all networking configurations and settings)
+	(specific network) -- (gives info about that particular network)
+	(specific network) down --> brings down your connection from the network
+	(specific network) up --> brings up your connection to the network
+telnet --> Communicate with other hosts
+trace(route/path) (address) --> Traces the route(hops) from you to the address
+wget (http//:(website)/indexfile) --> Downloads any index file from the website
+sudo tcpdump --> Displays the outgoing and incoming packets(protocols) -- shows the device IP,Domain IP,Domain name ,etc
+	-c n - (displays only n number of packets)
+	-A - Displays the packets in Ascii mode
+nmap --> Shows the same networks information
+ss --> Same same, it shows the information of networks
+------------------------------------------------------------------------------------------------------------------
+				-- ARCHIEVING AND BACK UP --
+gzip --> Zips something
+gunzip --> Unzips someting
+bzip2 --> Zip
+bunzip2 --> unzip
+tar -cfv (somename).tar something --> Archiving using tar
+tar -fxv --> Un archiving a tar
+------------------------------------------------------------------------------------------------------------------
+				-- TEXT FORMATTING --
+cat --> Shows the content of the file.
+	-A --> shows the non written characters
+	-ns --> shows the line numbers without gap
+ 
+cut --> CUts the information from a file and shows as output
+	-c n-m --> cuts from nth to mth charector
+	-f n --> cuts the nth field
+	-d '(delimiter)' -f/-c n/n-m --> cuts based on delimiter
+paste (file 1) (file 2) --> combines two files and shows as output using fields.
+join (file 1) (file 2) --> Joins 2 files which share a comon field.
+comm (file 1) (file 2) --> Compares two files, row 1 - uniq only in file 1, row 2 - uniq only file 2 , row 3 - comon 
+diff (file 1) (file 2) --> Describes the positions and types of changes required to convert the file 1 to file 2
+	a-append,c-change,d-delete
+patch --> Accepts output from 'diff' and is generally used to convert older to newer.
+	diff -Naur file1 file 2 > patchfile
+	patch < patchfile
+tr --> translate command
+	echo "hi man" | tr a-z A-Z --> HI MAN
+	echo "hi man" | tr [:lower:] A --> AA AAA
+	-s --> deletes repeated characters like "aabbss" | tr -s ab --> abss
+sed --> It performs text editing on a stream of text,--> complex and powerful  too.
+	echo "good"|sed 's/good/bad/' --> bad
+	echo "good"|sed 's_good_bad_' --> bad
+	echo "good"|sed '1s/good/bad/' --> bad
+	echo "good"|sed '2s/good/bad/' --> good
+	echo "aaabbbccc"| sed 's/b/B' --> aaaBbbccc
+	echo "aaabbbccc"| sed 's/b/B/g' --> aaaBBBccc
+	SEE 'man sed' FOR MORE INFORMATIN
+aspell (file name) --> checks for the spelling mitakes the file
+
+-----------------------------------------------------------------------------------------------------
+				-- TEXT FORMATING --
+nl (file_name) --> Displays the information of number of lines along with text, similar to cat -n
+fold -w n -s --> Displays the content in a file by wrapping up to n characters with the space included
+fmt (file name) --> Basically, it fills and joins lines in text while preserving blank lines and indentation.
+	eg.. fmt -cw 50 file
+pr (file name) --> used for printing purposes, divides the content of the page
+	eg .. pr -l 15 -w 50 file
+-------------------------------------------------------------------------------------------------------
+				--PRINTING--
+lpstat -a --> gives the information about the printers
+	-s ->  more detial information
+--> Before using the lpr command make sure you use the "pr" command for printer allignment
+ls /bin| pr -3 |lpr --> give job to the printer to print CHECK man lpr FOR MORE INFORMATION
+	lpr -d (printer name) 
+	lpr -# n --> n =  number of copies
+ls /bin|pr |lp --> same as lpr but slightly diffrent option set
+lpq --> gives the status of the printer queue
+cancel (job ID) --> cancels the printing process
+lprm --> does the same thing as the cancel command
+
+---------------------------------------------------------------------------------------------------
+					--USEFULL COMMANDS--
+date
+cal --> calender
+uptime --> shows time
+w --> displays user login information
+uname -a --> shows information about the kernal
+cat /proc/cpuinfo --> shows information  about the present CPU
+cat /proc/meminfo --> shows information about the present Memory
+df --> shows disk uage
+du -sh --> shows size of the present working directory
+free --> shows memory and swap usage 
+whereis (app) --> shows possible loaction of the app.
+stat (filename) --> gives the status of the file.
+--------------------------------------------------------------------------------------------------
+					--PAKAGES AND INSTALATION--
+apt-get install (pakage_name) --> downlaods and installs the pakage
+apt-get remove (pakage_name) --> uninstalls and removes the pakage
+apt-get update --> upadates the system
+apt-get upgarde --> upgrades the system
+dpkg --install (pakage_file) --> installs and also for upadating the downloaded pakage.(not need if apt-get install is used)
+dpkg --search (file_name) --> shows the pakage regarding a file
+dpkg --status (pakage_name) --> shows the status of the pakage
+dpkg --install --> lists the total pakages intstalled in the system
+apt-cache show (pakage_name) --> shows the information of the pakage
+------------------------------------------------------------------------------------------------
+					--CUSTOMISING PROMT--
+echo $PS1 --> shows the formula of promt for the logged user
+export PS1='promt configuration formula' --> should be written in the .bashrc file if the user
+/s -->Bash
+/A --> time:minutes n 24 hrs
+/u --> user
+/h --> host and many more..
+\033[1;30m Black        \033[0;31m Red \033[1;31m Light Red
+\033[0;32m Green        \033[1;32m Light Green
+\033[0;33m Brown	\033[1;33m Yellow
+\033[0;34m Blue         \033[1;34m Light Blue
+\033[0;35m Purple	\033[1;35m Light Purple
+\[ --> should be added for non texting symbol and should be ended \]
+-------------------------------------------------------------------------------------------------
+						--USERPATH--
+echo $PATH
+export PATH=location:"$PATH" --> adding new path to PATH --> should be added in .bashrc . loacation suggested as bin in ~/
+-----------------------------------------------------------------------------------------------
+					--USEFULL REGULAR EXPRESSIONS--
+^\(?[0-9][0-9][0-9]\)? [0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]$ --> Match an element zero or one time
+[[:upper:]][[:upper:][:lower:] ]*\. --> Match an element zero or more time
+^([[:alpha:]]+ ?)+$ --> Match an element one or more times
+^\(?[0-9]{3}\)? [0-9]{3}-[0-9]{4}$ --> Match an element specific number of times.
+[:alnum:] --> alfanumeric
+[:word:] --> word
+[:alpha:] --> alphabets
+[:lower:] --> lower
+[:upper:] --> upper 
+and many more ..
+--------------------------------------------------------------------------------------------------
+					--FILES SEARCHING--
+locate --> locates a file/folder , pipes can be used too
+find (location) (arguments)--> finds a file matching the arguments
+	-type f -> file
+	      d -> directory 
+	-name (regex)
+	-size
+	-(cmin,ctime) n --> some n time arguments
+eg -> find ~ -type f -name "*.JPG" -size +1M -cmin 2 | wc -l
+	-prem
+eg -> find ~ \( -type f -not -perm 0600 \) -or \( -type d -not -perm 0700 \) --> find files in ~ which has no permission or no permission
+	operators --> -and , -not , -or , ()
+	predifined actions --> -delete , -ls , -print , -exit
+eg -> find ~ -type f -name '*.BAK' -delete
+	user defined actions --> -exec rm '{}' ';
+eg -> find ~ -type f -name 'foo*' -exec ls -l '{}' ';'
+eg -> find ~ -type f -name 'foo*' -print | xargs ls -l
+--------------------------------------------------------------------------------------------------
+					--VARIABLES--
+printenv --> shows the environmental variables
+printenv (variable) --> shows the value of the varible
+echo $(variable) --> same as printenv (variable)
+set --> shows both environmenatal and set variables
+-------------------------------------------------------------------------------------------------
+					--KEYBOPOARD TRICKS--
+ctrl+a --> to the begining of the line
+ctrl+e --> to the end of the line
+alt+f --> one word forward
+alt+b --> one word backward
+ctrl+l --> cleans the screen by pushing up
+ctrl+k --> cut the text form the curser to the end of the line
+ctrl+u --> cut the text from the curser to the begining of the file
+ctrl+y --> pastes the text
+-------------------------------------------------------------------------------------------------
+					--USING ECHO COMMAND--
+echo "something" --> prints something
+
+--------------------------------------------------------------------------------------------------
+					--REDIRECTION--
+-------------------------------------------------------------------------------------------------
+					--WORKING WITH COMMANDS--
+-------------------------------------------------------------------------------------------------
