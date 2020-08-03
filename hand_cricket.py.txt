@@ -1,0 +1,85 @@
+import random
+import sys
+def batfirst():
+    cs = 0
+    us = 0
+    print("Get ready to **BAT**")
+    while True:
+        uc = int(input("give any number between  1 and 6"))
+        cc = random.randint(1, 6)
+        if uc == cc:
+            print("i choose " + str(cc) + " YOU ARE OUT, and YOUR SCORE IS ('" + str(us) + "')")
+            print("MY TARGET IS ('" + str(us+1) + "')")
+            print("Now it's my turn to bat, ")
+            break
+        us = us + uc
+        print("i choose " + str(cc) +". your score is '" + str(us) + "'")
+    cy = 0
+    uy = 0
+    print("--------------------------")
+    print("**START BOULING**")
+    while True:
+        if cy > us+1:
+            print(" I WON the match by '" + str(cy-us) + "' points, Better luck next time")
+            print("-----------------------------------------")
+            sys.exit()
+        ux = int(input("give any number between  1 and 6"))
+        cx = random.randint(1, 6)
+        if ux == cx:
+            print("i choose " + str(cx) + " i am  out and my  score is ('" + str(cy) + "')")
+            break
+        cy = cy + cx
+        print("i choose " + str(cx) + " my score is '" + str(cy) + "' I need " + str(us+1-cy) + " more runs to WIN")
+    if cy < us+1:
+        print("HURRAY!! YOU WON the match by '" + str(us+1-cy) + "' ")
+        print("---------------------------------")
+    else:
+        print("DRAW MATCH!!")
+        print("--------------------------------")
+    sys.exit()
+def boulfirst():
+    cy = 0
+    uy = 0
+    print("Get ready to **BOUL**")
+    while True:
+        ux = int(input("give any number between  1 and 6"))
+        cx = random.randint(1, 6)
+        if ux == cx:
+            print("i choose " + str(cx) + ". I AM OUT AND MY SCORE IS ('" + str(cy) + "')")
+            print("YOUR TARGET IS ('" + str(cy+1) + "')")
+            print("Now it's your time to bat")
+            break
+        cy = cy + cx
+        print("i choose " + str(cx) + " my score is '" + str(cy) + "'")
+    cs = 0
+    us = 0
+    print("---------------------------------")
+    print("**START BATTING**")
+    while True:
+        if us > cy+1:
+            print(" HURRAY !! YOU WON the match by '" + str(us-cy+1) + "' points")
+            print("---------------------------------")
+            sys.exit()
+        uc = int(input("give any number between  1 and 6"))
+        cc = random.randint(1, 6)
+        if uc == cc:
+            print("i choose " + str(cc) + " YOUR ARE OUT AND SCORE IS  ('" + str(us) + "')")
+            break
+        us = us + uc
+        print("i choose " + str(cc) + " Your score is '" + str(us) + "' You need " + str(cy+1-us) + " more runs to win")
+    if us < cy+1:
+        print("I WON the match by '" + str(cy+1-us) + "' , better luck next time")
+        print("---------------------------------")
+    else:
+        print("DRAW MATCH!!")
+        print("---------------------------------")
+    sys.exit()
+while True:
+    a = str(input(print('what do you want to do first BAT(X/x) or BOUL(Y/y)')))
+    if a == 'X' or a == 'x':
+        batfirst()
+    elif a == 'Y' or a == 'y':
+        boulfirst()
+    else:
+        print("INVALID INPUT, kindly choose between 'X','x','Y','Y'")
+        continue
