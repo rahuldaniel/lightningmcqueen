@@ -1,0 +1,38 @@
+"""List[
+x= position 
+y=element
+l.insert(x,y)
+l.remove(element)
+l.pop
+l.sort()
+l.reverse()
+l.count(g) -- counts no of g elements in the list
+list comprehension - [expression  for value in collection if <test>]
+eg.. s=[i**2 for i in range(1,101)]
+       print(s)
+eg.. m=[title for (title,year) in movies if title.startswith(""G")]
+      print(m)
+eg.. m=[title for (title,year) in movies if year<2000]
+      print(m)
+del l[-n:] -- deletes last n elements in the list
+*Lists cannot have Hash values*
+t=tuple(l) -- converting a list to a tuple 
+hast(t) -- Hash value of tuple t
+]
+
+{
+print("Rahul", end=" ")
+print("Hi")
+print("%.2f" % x) -- prints number x for 2 numbers after decimal
+s.swapcase() -- Swapes the cases the in the sting s
+d=n.split(" ") -- splits the string n,having space b/w then into a list
+a="-".join(d) -- joins the list with '-' and converts into a string
+s.isalnum() -- returns True if the string s has number and alphabet 
+s.isalpha() -- returns True if the string s has only alphabets 
+s.isdigit() -- returns True if the string s has only digits
+s.islower() -- returns True if the string s has only lowercase alphabet
+s.isupper() -- returns True if the string s has only uppercase alphabet
+print('R'.rjust(w,'-') -- allign 'R'  for a width space of w from the right
+print('R'.ljust(w,'-') -- allign 'R'  for a width space of w from the left
+print('R'.center(w,'-') -- allign 'R'  for a width space of w from the center
+}
