@@ -1,0 +1,196 @@
+Ferrari
+---------------
+F40
+F50
+458 SPIDER
+375 F1
+FF
+458 ITALIA
+599 GTO
+F12 BERINETTA
+ENZO FERRARI
+
+Dodge
+---------------
+CHARGER R/T
+CHALLENGER R/T
+CHARGER SRT8
+CHALLENGER SRT8
+CHALLENGER RT(1971)
+CHARGER RT(1969)
+VIPER SRT10 COUPE
+VIPER SRT10 ACR-X
+
+Lexus
+----------------
+IS 350 F SPORT (2014)
+IS F (2013)
+LFA
+
+Chevrolet
+----------------
+COBALT SS
+CAMARO ZL1(2013)
+CORVETTE ZR1
+CORVETTE STINGRAY Z51
+STINGRAY 427 (1969)
+CORVETTE C8.R (2020)
+SS
+
+Shelby
+-----------------
+COBRA GT500(1967)
+COBRA 427 (1966)
+
+Lamborghini
+----------------
+AVENTADOR LP 700-4
+GALLARDO LP560-4
+GALLARDO LP560 GT3
+MURCIELAGO R-SV GT-1
+HURRACAN R3 SPEC
+VENANO 
+
+Koenigsegg
+----------------
+CCXR
+AGERA
+
+SRT 
+-----------------
+viper GTS
+
+Bentley
+----------------
+CONTINENTAL GT SPEED
+CONTINENTAL SUPER SPORT
+
+Porsche
+----------------
+911 RSR (2019)
+911 TURBO(2009)
+911 GT3 R
+911 GT3 RS
+911 GT3 RS 4.0
+911 GT3 CUP
+911 CARRERA 2 SPEEDSTER (1993)
+911 CARRERA RS 2.7 (1972)
+CARRERA GT
+918 RSR CONCEPT
+918 SPYDER CONCEPT
+
+BMW
+----------------
+1 SERIES M COUPE
+Z4 M COUPE
+M3 COUPE
+Z4 SDRIVE35IS
+M3 GTS
+M6 COUPE
+Z4 GT3
+M3 GT2 ALMS
+
+Hyundai
+----------------
+VELOSTER TURBO
+120 WRC
+
+Pagani
+---------------
+HUAYRA
+ZONDA F
+
+Audi
+---------------
+TT RS COUPE(2012)
+A8 V10 COUPE
+R8 LMS ULTRA
+R8 V10 SPYDER
+
+Nissan
+---------------
+SILVIA [S15]
+SKYLINE GT-R V-SPEC [R34]
+350Z [Z33]
+370 [Z34]
+370Z NISMO [Z34]
+GT-R PREMIUM [R35]
+SUMO POWER GT GT-R GT1
+JR MOTORSPORTS GT-R GT1
+240Z [S30] R3 SPEC
+GT-R LM NISMO(2015)
+
+Aston Martin
+----------------
+DB9
+VANQUISH
+V12 VANTAGE S
+VANTAGE GT3
+
+Mercedes-Benz
+-------------------
+190E 2.5-16 EVOLUTION 2
+SLS AMG
+SL 65 AMG BLACK SERIES
+SLS AMG GT3
+
+Ariel
+-------------------
+ATOM 3.5
+ATOM V8
+
+Mclaren
+-------------------
+MP4-12C
+F1
+SENNA
+
+Mazda
+------------------
+RX-7 SPIRIT R[FD]
+
+Maserati
+---------------
+GRANTURISMO MC STRADALE
+GRANTURISMO MC STRADALE[LTD]
+
+Ford
+------------------
+FOCUS RS
+SHELBY GT500
+MUSTANG GT PREMIUM
+GT(2005)
+GT FIA GT1
+
+Formula one
+----------------
+MERCEDES-AMG GT R F1 SAFETY CAR
+F1 ACADEMY CAR
+RENAULT R.S.19
+FERRARI SF90
+McLAREN MCL34
+RED BULL RACING RB15
+
+Formula-E
+----------------
+SRT05E [SEASON 6]
+SRT05E [SEASON 5]
+SRT_01E [SEASON 3] -- *2
+SRT_01E [SEASON 4]
+NISSAN IM02
+
+Alfa Romeo
+------------------
+4C
+
+Honda
+-----------------
+CIVIC TYPE-R
+
+KTM
+----------------
+X-BOW R
+
+Caterham
+---------------
+SEVEN 620 R
