@@ -1,0 +1,75 @@
+Mount Panaroma - Bathrust - Australia -- 6.214
+Melbourne circuit - Australia --  2.7
+Carcuit de spa fanchor camps - Belgium -- 7.004
+Yas Marina Circuit - UAE -- 5.554
+Circuit des 24 Heurus - France -- 13.626
+Bugatti Circuit - France -- 4.143
+Brands Hatch - Indy circuit -- 2.029
+Richmond International speedway - USA -- 1.210
+Mazda raceway Laguna seca - USA -- 3.602
+Formula e Hongkong - Hong Kong -- 1.860
+Formula e Newyork - USA -- 1.947
+Formula e Berlin- Tempelhof Airport - Germany -- 2.250
+
+-------------------------------------------------
+
+Dubai Autodrome - UAE
+	Grand prix circuit -- 5.390
+	International circuit -- 4.291
+	National circuit -- 3.560
+	Club circuit -- 2.461
+	Hill circuit -- 1.748
+	Oval circuit -- 1.120
+	
+Suzuka Circuit - Japan
+	Grand prix circuit -- 5.807
+	East circuit -- 2.243
+	West circuit -- 3.467
+	
+Autodromo nationale Monza - Italy
+	Road course -- 5.794
+	Juniour course -- 2.404
+
+Circuit of Americas - USA 
+	Grand Prix circuit -- 5.515
+	National circuit -- 3.701
+	club circuit -- 1.979
+
+Daytona international speedway - USA
+	Speedway -- 4.023
+	Road course -- 5.729
+	Motorcycle course -- 4.748
+
+Silverstone - UK
+	The Bridge Grand prix circuit 2009 -- 5.140
+	Grand Prix circuit -- 5.892
+	International circuit -- 2.995
+	National circuit -- 2.638
+
+Hockenheimring - Germany
+	GP circuit -- 4.574
+	National circuit -- 3.629
+	short -- 2.638
+
+Nurburgring - Germany
+	Grand prix circuit -- 5.137
+	Sprint circuit -- 3.619
+	Mullenbachschleife -- 1.500
+
+Redbull Ring - Austria
+	Grand prix circuit -- 4.318
+	Sudschleife National Circuit -- 2.337
+
+Porsche test track - Germany
+	Dynamic circuit -- 2.250
+	On-road circuit long -- 3.706
+	On-road circuit short -- 2.200
+
+Indianapolis motor speedway - USA
+	Speedway -- 4.023
+	Road course -- 4.078
+
+Circuit de Barceolna Chatlunya - Spain
+	GP circuit -- 4.658
+	National circuit -- 3.069
+	club circuit -- 1.703
