@@ -24,8 +24,8 @@ while x>0:
         print("this round is a DRAW!, my throw is ", c, " your throw is ", u )
     x = x - 1
 if cc > uc:
-    print("I WON THE MATCH by " + str(cc-uc))
+    print("I WON THE MATCH by " + str(cc-uc) + "points")
 elif uc > cc:
-    print("YOU WON THE MATCH by " + str(uc-cc))
+    print(" YO!! YOU WON THE MATCH by " + str(uc-cc) + "points")
 else:
     print("DRAW MATCH, " + str(uc) + "scored by both")
