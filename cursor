@@ -1,16 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <conio.h>
 #include <windows.h>
 void  gotoxy (short int col ,short int row);
-#define HLINE for(i=0;i<79;i++)\
+#define HLINE for(r=0;r<79;r++)\
            printf("%c",196);
 #define VLINE(X,Y) {
                      gotoxy(X,Y);\
-                     printf("%c",179);\
+                     printf("%c",179);
                      }
 
-int main() {
-    int i,y;
+ main() {
+    int r,y;
     clrscr();
     gotoxy(1,12);
     //printf("Hello, World!\n");
