@@ -126,6 +126,7 @@ DB9
 VANQUISH
 V12 VANTAGE S
 VANTAGE GT3
+Valkyrie
 
 Mercedes-Benz
 -------------------
