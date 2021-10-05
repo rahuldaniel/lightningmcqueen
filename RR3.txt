@@ -106,6 +106,8 @@ TT RS COUPE(2012)
 A8 V10 COUPE
 R8 LMS ULTRA
 R8 V10 SPYDER
+RS 5 COUPE
+R15 TDI
 
 Nissan
 ---------------
@@ -149,6 +151,7 @@ SENNA
 Mazda
 ------------------
 RX-7 SPIRIT R[FD]
+FURAI
 
 Maserati
 ---------------
@@ -162,6 +165,9 @@ SHELBY GT500
 MUSTANG GT PREMIUM
 GT(2005)
 GT FIA GT1
+GT 2017
+MUSTANG 2020 -- STEWART HAAS - NASCAR
+MUSTANG 2021 -- STEWART HAAS - NASCAR
 
 Formula one
 ----------------
@@ -197,3 +203,7 @@ X-BOW R
 Caterham
 ---------------
 SEVEN 620 R
+
+Hennessey
+---------------
+VENOM F5
