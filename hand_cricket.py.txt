@@ -75,7 +75,7 @@ def boulfirst():
         print("---------------------------------")
     sys.exit()
 while True:
-    a = str(input(print('what do you want to do first BAT(X/x) or BOUL(Y/y)')))
+    a = raw_input('what do you want to do first BAT(X/x) or BOUL(Y/y)')
     if a == 'X' or a == 'x':
         batfirst()
     elif a == 'Y' or a == 'y':
