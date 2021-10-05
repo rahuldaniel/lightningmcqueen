@@ -1,1 +1,13 @@
-sudo apt
+apt install vsftpd
+
+systemctl start vsftpd
+systemctl enable vsftpd
+systemctl enable vsftpd
+
+ufw allow 20/tcp
+ufw allow 21/tcp
+
+the default directory is " /srv/ftp/ "
+
+systemctl stop vsftpd
+systemctl disable vsftpd
