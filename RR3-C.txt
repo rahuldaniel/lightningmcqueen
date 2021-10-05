@@ -1,7 +1,8 @@
 Mount Panaroma - Bathrust - Australia -- 6.214
 Melbourne circuit - Australia --  2.7
 Marina bay circuit -- 5.063
-Carcuit de spa fanchor camps - Belgium -- 7.004
+Circuit de spa fanchor camps - Belgium -- 7.004
+Circuit de Monaco -- 3.337
 Yas Marina Circuit - UAE -- 5.554
 Circuit des 24 Heurus - France -- 13.626
 Bugatti Circuit - France -- 4.143
