@@ -1,3 +1,7 @@
+Lotus
+--------------
+TYPE 125 R
+
 Ferrari 
 ---------------
 F40
@@ -50,11 +54,25 @@ GALLARDO LP560 GT3
 MURCIELAGO R-SV GT-1
 HURRACAN R3 SPEC
 VENANO 
+COUNTACH
+AVENTADOR SVJ
+HURACAN PERFORMANTE
+SAIN FKP 37
+
 
 Koenigsegg
 ----------------
 CCXR
 AGERA
+ONE
+REGERA
+
+Bugatti
+----------------
+VEYRON 16.4
+VEYRON 16.4 GRAND SPORT VITESSE
+CHIRON SPORT
+
 
 SRT 
 -----------------
@@ -64,6 +82,7 @@ Bentley
 ----------------
 CONTINENTAL GT SPEED
 CONTINENTAL SUPER SPORT
+CONTINENTAL GT3
 
 Porsche
 ----------------
@@ -99,6 +118,7 @@ Pagani
 ---------------
 HUAYRA
 ZONDA F
+ZONDA R
 
 Audi
 ---------------
@@ -108,6 +128,11 @@ R8 LMS ULTRA
 R8 V10 SPYDER
 RS 5 COUPE
 R15 TDI
+
+Renault
+---------------
+CLIO CUP
+R.S. 01
 
 Nissan
 ---------------
