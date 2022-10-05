@@ -50,6 +50,8 @@ GALLARDO LP560 GT3
 MURCIELAGO R-SV GT-1
 HURRACAN R3 SPEC
 VENANO 
+Diablo SV
+
 
 Koenigsegg
 ----------------
