@@ -11,6 +11,7 @@ Richmond International speedway - USA -- 1.210
 Mazda raceway Laguna seca - USA -- 3.602
 Formula e Hongkong - Hong Kong -- 1.860
 Formula e Newyork - USA -- 1.947
+Formula e Brooklyn circuit - USA -- 
 Formula e Berlin- Tempelhof Airport - Germany -- 2.250
 
 -------------------------------------------------
